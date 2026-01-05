@@ -1,4 +1,17 @@
-# Godot 4+ specific ignores
+############################
+# Godot 4.x - Base
+############################
+
+.godot/
+*.tmp
+*.temp
+*.bak
+*.old
+*.tscn~
+*.scn~
+*.res~
+*.tres~
+*.import
 .godot/
 .nomedia
 
@@ -14,3 +27,107 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+############################
+# Build / Export
+############################
+
+# Cartelle di build/esportazione
+build/
+builds/
+export/
+exports/
+dist/
+
+# Eseguibili e pacchetti
+*.exe
+*.x86_64
+*.apk
+*.aab
+*.app
+*.dmg
+*.ipa
+*.html
+*.wasm
+*.pck
+*.zip
+*.tar
+*.tar.gz
+
+############################
+# Log e debug
+############################
+
+*.log
+crash.log
+
+############################
+# Sistema operativo
+############################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.fuse_hidden*
+
+############################
+# IDE / Editor
+############################
+
+.vscode/
+*.code-workspace
+.idea/
+.vs/
+
+############################
+# Godot specific
+############################
+
+export_presets.cfg
+
+############################
+# Cache e temp
+############################
+
+.cache/
+__pycache__/
+
+############################
+# Asset pesanti NON versionabili
+############################
+
+# Modelli 3D grandi
+*.blend
+*.fbx
+*.glb
+
+# Audio / video grandi
+*.wav
+*.ogg
+*.mp4
+*.mov
+*.flac
+*.mkv
+
+# Texture grosse o raw
+*.psd
+*.tga
+
+############################
+# Tool vari
+############################
+
+# Node / npm
+node_modules/
+
+# Python virtual environment
+.venv/
